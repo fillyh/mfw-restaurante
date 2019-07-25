@@ -1,5 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Playfair+Display|Raleway&display=swap');
 
+
+#our_story, #review, #menu, #contact_us{
+    min-height: 600px;
+}
+
+/* nav section */
+
+.nav li a:hover, .navbar-default{
+    background-color: transparent;
+}
+
+.nav-bar-default{
+    border-color:transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: #fff;
+    background-color: rgba(17,17,15,.5);
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: #fcfcfc;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus{
+    color: #f8512f;
+    background-color: rgba(17,17,15,.2);
+}
+
+nav.navbar{
+    position: absolute;
+    top:100;
+    right:0;
+    left:0;
+    z-index:20;
+}
+
+
+.navbar-brand > img{
+    margin-top:-7px;
+}
+/* End nav section */
 
 .carousel-caption{
     z-index:10;
@@ -31,14 +74,17 @@
     padding-top:70px;
 }
 
-#our_story{
-    padding:40px 0px;
+#our_story, #review, #menu, #contact_us{
+    padding:100px 0px;
+    /* height: 100vh; */
 }
 
 
 #our_story h3{
     padding-top:5px;
     margin-top:0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700px;
 }
 
 h2{
@@ -47,9 +93,30 @@ h2{
     color:orange;
     margin-bottom:5px;
     margin-top:0;
+    text-shadow:1px 1px 2px #0a0a0a;
+}
+
+#our_story p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300px;
+    font-size:16px;
+
+}
+
+#story_year{
+    font-family: 'Playfair Display', serif;
+    font-size:200px;
+    font-weight:700;
+    z-index: -1;
+    position: absolute;
+    color:rgba(149, 147, 147, 0.2);
 }
 
 /* Reviews Section */
+
+/* #review{
+    height:100vh;
+} */
 
 .review_section{
     background-size: cover;
@@ -60,11 +127,57 @@ h2{
 .review_container{
     background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    margin: 80px 0px;
+    margin-top: 80px;
+    margin-bottom:80px;
 
 }
 
 #review p{
     font-size: 20px;
     color: white;
+}
+
+/* End Reviews Section */
+.menu_section{
+    background-size: cover;
+    background-position:center;
+    background-image: url('../img/black_linen.png');
+    padding: 20px 0px;
+}
+
+
+
+/* Menu Section */
+
+/* End Menu Section */
+
+
+/* Contact Section */
+
+#contact_us{
+    background-color: #ff3f34;
+    color:white;
+}
+
+#contact_us h1{
+font-family: font-family: 'Raleway', sans-serif;
+}
+
+
+.btn-primary{
+    color: #fff;
+    background-color:#f8512f;
+    border-color:transparent;
+
+}
+
+.btn-primary:hover{
+    background-color: #d34326;
+    border-color:transparent;
+
+}
+
+.carousel-caption p{
+    color: #f7f7f7;
+    font-size:18px;
 }

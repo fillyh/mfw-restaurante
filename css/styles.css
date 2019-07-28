@@ -19,6 +19,15 @@ body{
     padding-bottom:100px;
 }
 
+#our_story h2, #review h2, #menu h2, #contact_us h2{
+    font-size:6em;
+    font-family: 'Lobster', cursive;
+    color:orange;
+    margin-bottom:5px;
+    margin-top:0;
+    text-shadow:1px 1px 1px rgba(127, 140, 141,.6);
+}
+
 /* nav section */
 
 .nav li a:hover, .navbar-default{
@@ -92,6 +101,10 @@ nav.navbar{
     font-size:18px;
 }
 
+.main_logo{
+    padding-top:10%;
+    min-height:300px !important;
+}
 
 .main_img1{
     background-image: url('../img/wood-2.jpg');
@@ -106,14 +119,9 @@ nav.navbar{
     background-image: url('../img/farm-2.jpg');
 }
 
-.main_logo{
-    height:70px;
-    padding-top:70px;
-    padding-bottom:70px;
-}
 
 
-
+/* Our Story Section */
 
 
 #our_story h3{
@@ -123,14 +131,6 @@ nav.navbar{
     font-weight: 700px;
 }
 
-h2{
-    font-size:5em;
-    font-family: 'Lobster', cursive;
-    color:orange;
-    margin-bottom:5px;
-    margin-top:0;
-    text-shadow:1px 1px 2px #0a0a0a;
-}
 
 #our_story p{
     font-family: 'Raleway', sans-serif;
@@ -148,11 +148,20 @@ h2{
     color:rgba(149, 147, 147, 0.2);
 }
 
+.year_container{
+    display:flex;
+    justify-content: center;
+
+}
+
+.year_container h3{
+    text-align:center;
+}
+
+
+
 /* Reviews Section */
 
-/* #review{
-    height:100vh;
-} */
 
 .review_section{
     background-size: cover;

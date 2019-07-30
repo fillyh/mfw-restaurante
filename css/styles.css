@@ -6,7 +6,8 @@ body{
 }
 
 #our_story, #review, #menu, #contact_us{
-    min-height: 600px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 
 .body-wrap{
@@ -14,18 +15,20 @@ body{
     margin: 0 auto;
 }
 
-#our_story, #review, #menu, #contact_us{
-    padding-top:100px;
-    padding-bottom:100px;
-}
 
-#our_story h2, #review h2, #menu h2, #contact_us h2{
+#our_story h2, #review h2, #menu h2{
     font-size:6em;
     font-family: 'Lobster', cursive;
     color:orange;
-    margin-bottom:5px;
+    margin-bottom:15px;
     margin-top:0;
     text-shadow:1px 1px 1px rgba(127, 140, 141,.6);
+    line-height: 75px;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
 /* nav section */
@@ -73,7 +76,6 @@ nav.navbar{
 .carousel-caption{
     z-index:10;
     padding-bottom:60px;
-    /* margin-bottom:60px; */
 }
 
 .carousel-inner .item{
@@ -143,14 +145,14 @@ nav.navbar{
 
 #our_story p{
     font-family: 'Raleway', sans-serif;
-    font-weight: 300px;
+    font-weight: 300;
     font-size:16px;
 
 }
 
 #story_year{
     font-family: 'Playfair Display', serif;
-    font-size:200px;
+    font-size:160px;
     font-weight:700;
     z-index: -1;
     position: absolute;
@@ -184,11 +186,11 @@ nav.navbar{
     padding: 20px;
     margin-top: 80px;
     margin-bottom:80px;
-
 }
 
 #review p{
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 40px;
     color: white;
 }
 
@@ -197,21 +199,31 @@ nav.navbar{
 
 /* Menu Section */
 
-.nav.nav-tabs > li > a{
+#menu .nav-tabs > li > a{
     color: #f8512f;
+    font-size: 1.1em;
+    padding-left:40px;
+    padding-right:40px;
 }
 
-.nav.nav-tabs > li > a:hover, .nav.nav-tabs > li > a:focus{
+#menu .nav-tabs > li > a:hover{
     color: #f8512f;
-    background-color:rgb(82, 82, 82);
+    background-color:rgba(255,255,255, 0.1);
     border: transparent;
 }
 
+#menu .nav-tabs > li > a:focus{
+    color: #f8512f;
+    background-color:white;
+    border: transparent;
+
+}
 
 .menu_section{
     background-size: cover;
     background-position:center;
     background-image: url('../img/black_linen.png');
+    background-attachment: fixed;
     
 }
 
@@ -241,11 +253,9 @@ nav.navbar{
 #contact_us{
     background-color: #ff3f34;
     color:white;
+    font-size: 15px;
 }
 
-#contact_us h3 p{
-font-family: font-family: 'Raleway', sans-serif;
-}
 
 #contact_us h3{
     font-size:50px;
@@ -256,7 +266,7 @@ font-family: font-family: 'Raleway', sans-serif;
 }
 
 form{
-    background-color: #c23616;
+    background-color: rgba(47, 54, 64,1.0);
     padding:20px;
     border-radius: 5px;
     margin-bottom:20px;
@@ -267,8 +277,48 @@ form{
     padding-top:40px;
 }
 
+#contact_fine_print{
+    padding-top: 10px;
+}
+
+.my_form span{
+    color:red;
+}
+
+form span::after{
+    content:"*"
+}
+
+.contact_fine_print{
+    text-align: center;
+
+}
+
+/* Footer */
 
 footer{
-    background-color: #c23616;
+    background-color: #b33939;
     padding:20px 0;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+    #our_story, #review, #menu, #contact_us{
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+
+    .review_section{
+        background-size:cover;
+        background-position:center;
+        background-image: url('../img/food_review.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    #menu .nav-tabs > li > a{
+        padding-left:8px;
+        padding-right:8px;
+    }
+  }
